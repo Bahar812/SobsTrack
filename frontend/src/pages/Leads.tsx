@@ -214,7 +214,7 @@ export default function Leads() {
               <div>
                 <h4 className="font-display text-lg font-semibold">Catatan Lead</h4>
                 <p className="text-sm text-slate-600 dark:text-slate-400">
-                  {selectedLead.name} - {selectedLead.sales?.name ?? '-'}
+                  {selectedLead.customer_name} - {selectedLead.sales_name ?? '-'}
                 </p>
               </div>
               <button

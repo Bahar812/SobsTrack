@@ -126,7 +126,9 @@ export default function SobsTrackLanding() {
       stagger: 0.12,
       ease: 'power2.out',
     });
-    return () => timeline.kill();
+    return () => {
+      timeline.kill();
+    };
   }, [isLoading]);
 
   const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
