@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Laravel / PHP
+backend/vendor/
+
+# OS
+.DS_Store
+Thumbs.db
