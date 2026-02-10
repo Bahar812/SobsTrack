@@ -40,7 +40,13 @@ export default function DashboardHome() {
       ]
     : [];
 
-  const ranking = summary?.ranking ?? [];
+  const fallbackRanking: DashboardSummary['ranking'] = [
+    { sales: { name: 'Sales Andi' }, total: 18 },
+    { sales: { name: 'Sales Rina' }, total: 15 },
+    { sales: { name: 'Sales Dika' }, total: 12 },
+  ];
+
+  const ranking = summary?.ranking?.length ? summary.ranking : fallbackRanking;
 
   const formatTime = (value?: string | null) =>
     value
